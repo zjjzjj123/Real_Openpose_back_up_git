@@ -1,0 +1,14 @@
+#每个模型训练后的说明
+Es_demo.h5 : FallVideo 20个样本 + 博北训练集 + xa0051 + xa_0061 Es_bobei_FallVideo.csv
+framewise_recognition.h5 作者的模型
+framewise_recognition_bobei.h5 只是用博北采集的数据集  data_train_bobei.csv
+framewise_recognition_bobei_FallVideo.h5 FallVideo + 博北data_trian_bobei_FallVideo.csv
+framewise_recognition_under_scene.h5 作者的模型
+Es_all_demo.h5 Fall+博北+xa51 xa61 xa66训练出来的
+Es_all_demo_1.h5 正常4200+摔倒1316 训练出来的 烂的不行
+
+性能比较好的 只有fra_bobei 测试xa_0066挺好的 整体表现不错 比起他好多了  主要是博北的数据集明确性比较高  无遮挡
+
+#考虑从多帧检测出fall down进行连续计数 然后判断fall down的发生 考虑到动作的连续性
+使用多帧判断 进而减少误判
+
